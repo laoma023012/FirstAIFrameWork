@@ -18,6 +18,12 @@ string
 fstream
 -
 
+/home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h
+iostream
+-
+
+/home/mxc/CLionProjects/FirstAIFramework/networkDefine/netParamDefine.h
+
 /home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp
 JsonReaderFile.h
 /home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.h
@@ -35,4 +41,8 @@ iostream
 -
 string
 -
+../networkDefine/layerParamDefine.h
+/home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h
+../networkDefine/netParamDefine.h
+/home/mxc/CLionProjects/FirstAIFramework/networkDefine/netParamDefine.h
 

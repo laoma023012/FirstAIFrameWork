@@ -6,5 +6,7 @@ CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o
 CMakeFiles/FirstAIFramework.dir/main.cpp.o
  /home/mxc/CLionProjects/FirstAIFramework/main.cpp
 CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o
+ /home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h
+ /home/mxc/CLionProjects/FirstAIFramework/networkDefine/netParamDefine.h
  /home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp
  /home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.h

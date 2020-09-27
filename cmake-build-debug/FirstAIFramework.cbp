@@ -99,6 +99,12 @@
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/main.cpp">
 			<Option target="FirstAIFramework"/>
 		</Unit>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h">
+			<Option target="FirstAIFramework"/>
+		</Unit>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/networkDefine/netParamDefine.h">
+			<Option target="FirstAIFramework"/>
+		</Unit>
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp">
 			<Option target="FirstAIFramework"/>
 		</Unit>
