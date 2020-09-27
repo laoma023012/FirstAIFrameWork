@@ -12,8 +12,6 @@ include(FindProtobuf)
 find_package(Protobuf REQUIRED)
 include_directories(${PROTOBUF_INCLUDE_DIR})
 
-
-
 add_executable(FirstAIFramework ${SOURCE_FILES})
 target_link_libraries(FirstAIFramework jsoncpp)
 target_link_libraries(FirstAIFramework armadillo)

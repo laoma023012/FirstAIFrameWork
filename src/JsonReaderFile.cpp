@@ -17,7 +17,19 @@ jsonReaderFile& jsonReaderFile::readParam(std::string json_txt) {
         std::cout << "error Read" << std::endl;
     } else {
         if (!value["train"].isNull()){
-
+            auto &paramNet = value["train"];
+            this->learningRate = paramNet["learning rate"].asDouble();
+            this->momentumParameter = paramNet[""].asDouble();
+            this->batchSize = paramNet[""].asInt();
+            this->useBatch = paramNet[""].asBool();
+            this->evaluateInterval = paramNet[""].asInt();
+            this->fineTune = paramNet[""].asBool();
+            this->lrDecay = paramNet[""].asDouble();
+            this->lrUpdate = paramNet[""].asBool();
+            this->numEpochs = paramNet[""].asInt();
+            this->preTrainModel = paramNet[""].asString();
+            this->snapshot = paramNet[""].asBool();
+            this->updateMethod = paramNet[""].asString();
         }
     }
 }
