@@ -5,11 +5,12 @@
 #include <string>
 #include "../networkDefine/layerParamDefine.h"
 #include "../networkDefine/netParamDefine.h"
+#include <unordered_map>
 #ifndef FIRSTAIFRAMEWORK_JSONREADERFILE_H
 #define FIRSTAIFRAMEWORK_JSONREADERFILE_H
 struct jsonReaderFile{
     LayerParamDefine& layerParamDefine;
-    NetParamDefine& netParamDefine;
+    std::unordered_map<std::string, NetParamDefine> lparams;
     void readParam(std::string);
 };
 
