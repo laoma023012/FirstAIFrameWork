@@ -1,0 +1,3 @@
+/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/FirstAIFramework.dir
