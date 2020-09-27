@@ -1,0 +1,57 @@
+{
+  "train":{
+    "learning rate" : 0.001,
+    "lr decay": 0.99,
+    "update method": "momentum",
+    "momentum parameter": 0.95,
+    "num epochs": 500,
+    "use batch": true,
+    "batch size": 200,
+    "evaluate interval": 1,
+    "lr update": true,
+    "snapshot": false,
+    "snapshot interval": 10,
+    "fine tune": false,
+    "pre train model": "./iter20.gordonmodel"
+  } ,
+  "net":[
+    {
+      "name":"conv1",
+      "type":"Conv",
+      "kernel num":5,
+      "kernel height":3,
+      "kernel width":3,
+      "pad":1,
+      "stride":1
+    },
+    {
+      "name":"relu1",
+      "type":"Relu"
+    },
+    {
+      "name":"pool1",
+      "type":"Pool",
+      "kernel height":2,
+      "kernel width":2,
+      "stride":1
+    },
+    {
+      "name":"conv2",
+      "type":"Conv",
+      "kernel num":10,
+      "kernel height":6,
+      "kernel width":6,
+      "pad":1,
+      "stride":1
+    },
+    {
+      "name":"fc1",
+      "type":"Fc",
+      "kernel num":10
+    },
+    {
+      "name":"softmax",
+      "type":"Softmax"
+    }
+  ]
+}

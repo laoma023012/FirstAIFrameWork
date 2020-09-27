@@ -45,11 +45,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/include/armadillo_bits"/>
-					<Add directory="/usr/local/include"/>
+					<Add directory="."/>
+					<Add directory="/usr/local/protobuf/include/"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
@@ -69,11 +71,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/include/armadillo_bits"/>
-					<Add directory="/usr/local/include"/>
+					<Add directory="."/>
+					<Add directory="/usr/local/protobuf/include/"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
@@ -86,7 +90,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.cpp">
+			<Option target="FirstAIFramework"/>
+		</Unit>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.h">
+			<Option target="FirstAIFramework"/>
+		</Unit>
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/main.cpp">
+			<Option target="FirstAIFramework"/>
+		</Unit>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp">
+			<Option target="FirstAIFramework"/>
+		</Unit>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.h">
 			<Option target="FirstAIFramework"/>
 		</Unit>
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/src/TestHello.cpp">
