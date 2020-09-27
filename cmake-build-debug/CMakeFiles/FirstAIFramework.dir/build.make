@@ -90,22 +90,9 @@ CMakeFiles/FirstAIFramework.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FirstAIFramework.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxc/CLionProjects/FirstAIFramework/main.cpp -o CMakeFiles/FirstAIFramework.dir/main.cpp.s
 
-CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o: CMakeFiles/FirstAIFramework.dir/flags.make
-CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o: ../src/TestHello.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o -c /home/mxc/CLionProjects/FirstAIFramework/src/TestHello.cpp
-
-CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mxc/CLionProjects/FirstAIFramework/src/TestHello.cpp > CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.i
-
-CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxc/CLionProjects/FirstAIFramework/src/TestHello.cpp -o CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.s
-
 CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o: CMakeFiles/FirstAIFramework.dir/flags.make
 CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o: ../layer/MyLayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o -c /home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.cpp
 
 CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.i: cmake_force
@@ -118,7 +105,7 @@ CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.s: cmake_force
 
 CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o: CMakeFiles/FirstAIFramework.dir/flags.make
 CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o: ../src/JsonReaderFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o -c /home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp
 
 CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.i: cmake_force
@@ -132,7 +119,6 @@ CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.s: cmake_force
 # Object files for target FirstAIFramework
 FirstAIFramework_OBJECTS = \
 "CMakeFiles/FirstAIFramework.dir/main.cpp.o" \
-"CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o" \
 "CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o" \
 "CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o"
 
@@ -140,13 +126,12 @@ FirstAIFramework_OBJECTS = \
 FirstAIFramework_EXTERNAL_OBJECTS =
 
 FirstAIFramework: CMakeFiles/FirstAIFramework.dir/main.cpp.o
-FirstAIFramework: CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o
 FirstAIFramework: CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o
 FirstAIFramework: CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o
 FirstAIFramework: CMakeFiles/FirstAIFramework.dir/build.make
 FirstAIFramework: /usr/local/protobuf/lib/libprotobuf.so
 FirstAIFramework: CMakeFiles/FirstAIFramework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable FirstAIFramework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable FirstAIFramework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FirstAIFramework.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

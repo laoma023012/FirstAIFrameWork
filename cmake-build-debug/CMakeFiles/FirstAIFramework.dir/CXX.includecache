@@ -11,8 +11,6 @@ iostream
 -
 armadillo
 -
-src/TestHello.h
-/home/mxc/CLionProjects/FirstAIFramework/src/TestHello.h
 json/json.h
 /home/mxc/CLionProjects/FirstAIFramework/json/json.h
 string
@@ -20,7 +18,21 @@ string
 fstream
 -
 
-/home/mxc/CLionProjects/FirstAIFramework/src/TestHello.h
+/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp
+JsonReaderFile.h
+/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.h
+fstream
+-
+json/json.h
+-
 iostream
+-
+assert.h
+/home/mxc/CLionProjects/FirstAIFramework/src/assert.h
+
+/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.h
+iostream
+-
+string
 -
 

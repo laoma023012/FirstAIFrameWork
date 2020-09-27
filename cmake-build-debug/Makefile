@@ -224,33 +224,6 @@ src/JsonReaderFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.s
 .PHONY : src/JsonReaderFile.cpp.s
 
-src/TestHello.o: src/TestHello.cpp.o
-
-.PHONY : src/TestHello.o
-
-# target to build an object file
-src/TestHello.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o
-.PHONY : src/TestHello.cpp.o
-
-src/TestHello.i: src/TestHello.cpp.i
-
-.PHONY : src/TestHello.i
-
-# target to preprocess a source file
-src/TestHello.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.i
-.PHONY : src/TestHello.cpp.i
-
-src/TestHello.s: src/TestHello.cpp.s
-
-.PHONY : src/TestHello.s
-
-# target to generate assembly for a file
-src/TestHello.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.s
-.PHONY : src/TestHello.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -269,9 +242,6 @@ help:
 	@echo "... src/JsonReaderFile.o"
 	@echo "... src/JsonReaderFile.i"
 	@echo "... src/JsonReaderFile.s"
-	@echo "... src/TestHello.o"
-	@echo "... src/TestHello.i"
-	@echo "... src/TestHello.s"
 .PHONY : help
 
 

@@ -1,6 +1,5 @@
 #include <iostream>
 #include <armadillo>
-#include "src/TestHello.h"
 #include "json/json.h"
 #include <string>
 #include <fstream>
@@ -8,9 +7,7 @@ using namespace std;
 //using namespace Json;
 using namespace arma;
 void testJSON(){
-    //TestHello testArmadillo = TestHello();
-    //testArmadillo.testHelloWorld();
-    //std::cout << "Hello, World!" << std::endl;
+
     arma::mat A = arma::randu<arma::mat>(4,5);
     arma::mat B = arma::randu<arma::mat>(4,5);
 

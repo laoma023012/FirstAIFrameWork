@@ -105,12 +105,6 @@
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.h">
 			<Option target="FirstAIFramework"/>
 		</Unit>
-		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/src/TestHello.cpp">
-			<Option target="FirstAIFramework"/>
-		</Unit>
-		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/src/TestHello.h">
-			<Option target="FirstAIFramework"/>
-		</Unit>
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

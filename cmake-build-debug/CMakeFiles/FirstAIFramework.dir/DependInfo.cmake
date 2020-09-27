@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.cpp" "/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o"
   "/home/mxc/CLionProjects/FirstAIFramework/main.cpp" "/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/FirstAIFramework.dir/main.cpp.o"
   "/home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp" "/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o"
-  "/home/mxc/CLionProjects/FirstAIFramework/src/TestHello.cpp" "/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

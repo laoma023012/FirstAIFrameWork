@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o"
   "CMakeFiles/FirstAIFramework.dir/main.cpp.o"
   "CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o"
-  "CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o"
   "FirstAIFramework"
   "FirstAIFramework.pdb"
 )

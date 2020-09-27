@@ -5,7 +5,6 @@ CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o
  /home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.cpp
 CMakeFiles/FirstAIFramework.dir/main.cpp.o
  /home/mxc/CLionProjects/FirstAIFramework/main.cpp
- /home/mxc/CLionProjects/FirstAIFramework/src/TestHello.h
-CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o
- /home/mxc/CLionProjects/FirstAIFramework/src/TestHello.cpp
- /home/mxc/CLionProjects/FirstAIFramework/src/TestHello.h
+CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o
+ /home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.cpp
+ /home/mxc/CLionProjects/FirstAIFramework/src/JsonReaderFile.h

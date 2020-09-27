@@ -4,8 +4,7 @@
 CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.o: ../layer/MyLayer.cpp
 
 CMakeFiles/FirstAIFramework.dir/main.cpp.o: ../main.cpp
-CMakeFiles/FirstAIFramework.dir/main.cpp.o: ../src/TestHello.h
 
-CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o: ../src/TestHello.cpp
-CMakeFiles/FirstAIFramework.dir/src/TestHello.cpp.o: ../src/TestHello.h
+CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o: ../src/JsonReaderFile.cpp
+CMakeFiles/FirstAIFramework.dir/src/JsonReaderFile.cpp.o: ../src/JsonReaderFile.h
 
