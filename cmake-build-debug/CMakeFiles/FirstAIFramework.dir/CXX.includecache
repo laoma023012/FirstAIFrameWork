@@ -1,10 +1,12 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
 #IncludeRegexComplain: ^$
 
 #IncludeRegexTransform: 
+
+/home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.cpp
 
 /home/mxc/CLionProjects/FirstAIFramework/main.cpp
 iostream
@@ -45,4 +47,6 @@ string
 /home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h
 ../networkDefine/netParamDefine.h
 /home/mxc/CLionProjects/FirstAIFramework/networkDefine/netParamDefine.h
+unordered_map
+-
 
