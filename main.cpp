@@ -47,7 +47,7 @@ void testParameter(){
     cout << netParamDefine.updateMethod << endl;
 }
 
-int main() {
+int main(int arg, char** argv) {
     testParameter();
     return 0;
 }

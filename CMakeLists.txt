@@ -31,9 +31,5 @@ add_executable(FirstAIFramework
 
 target_link_libraries(FirstAIFramework ${JSONCPP_LIBRARIES})
 target_link_libraries(FirstAIFramework -larmadillo)
-target_link_libraries(FirstAIFramework
-        ${Boost_FILESYSTEM_LIBRARY}
-        ${Boost_SYSTEM_LIBRARY}
-        ${PROTOBUF_LIBRARY}
-        )
+target_link_libraries(FirstAIFramework ${Boost_FILESYSTEM_LIBRARY} ${Boost_SYSTEM_LIBRARY} ${PROTOBUF_LIBRARY})
 

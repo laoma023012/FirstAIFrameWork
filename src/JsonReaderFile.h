@@ -17,7 +17,7 @@ public:
 private:
     LayerParamDefine& layerParamDefine;
     NetParamDefine& netParamDefine;
-    std::unordered_map<std::string, NetParamDefine> lparams;
+    std::unordered_map<std::string, LayerParamDefine> lparams;
     void readParam(std::string a);
 };
 
