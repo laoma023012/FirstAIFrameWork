@@ -8,11 +8,17 @@
 #include <unordered_map>
 #ifndef FIRSTAIFRAMEWORK_JSONREADERFILE_H
 #define FIRSTAIFRAMEWORK_JSONREADERFILE_H
-struct jsonReaderFile{
+class JsonReaderFile {
+public:
+    JsonReaderFile(std::string jsonName, LayerParamDefine &layerParamDefine, NetParamDefine &netParamDefine)
+            : layerParamDefine(layerParamDefine), netParamDefine(netParamDefine) {
+        readParam(jsonName);
+    };
+private:
     LayerParamDefine& layerParamDefine;
     NetParamDefine& netParamDefine;
     std::unordered_map<std::string, NetParamDefine> lparams;
-    void readParam(std::string);
+    void readParam(std::string a);
 };
 
 #endif //FIRSTAIFRAMEWORK_JSONREADERFILE_H

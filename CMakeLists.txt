@@ -1,18 +1,39 @@
 cmake_minimum_required(VERSION 3.7)
 project(FirstAIFramework)
+
 set(CMAKE_CXX_STANDARD 11)
 
-link_directories("/usr/lib/" "/home/mxc/armadillo-8.300.4/build" "/usr/lib/x86_64-linux-gnu" "/lib/i386-linux-gnu/")
-include_directories("/usr/include/armadillo_bits/" "/usr/include") # <<<
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-set(SOURCE_FILES main.cpp layer/MyLayer.h layer/MyLayer.cpp src/JsonReaderFile.h src/JsonReaderFile.cpp networkDefine/layerParamDefine.h networkDefine/netParamDefine.h)
-set(PROTOBUF_LIBRARY /usr/local/protobuf/lib/libprotobuf.so)
 include(FindProtobuf)
-find_package(Protobuf REQUIRED)
-include_directories(${PROTOBUF_INCLUDE_DIR})
 
-add_executable(FirstAIFramework ${SOURCE_FILES})
-target_link_libraries(FirstAIFramework jsoncpp)
-target_link_libraries(FirstAIFramework armadillo)
-target_link_libraries(FirstAIFramework ${PROTOBUF_LIBRARY})
+find_package(PkgConfig REQUIRED)
+find_package(Armadillo REQUIRED)
+find_package(Protobuf REQUIRED)
+
+include_directories(${PROTOBUF_INCLUDE_DIR})
+include_directories(layer)
+include_directories(networkDefine)
+include_directories(src)
+include_directories(${ARMADILLO_INCLUDE_DIRS})
+
+pkg_check_modules(JSONCPP jsoncpp)
+link_libraries(${JSONCPP_LIBRARIES})
+
+add_executable(FirstAIFramework
+        layer/MyLayer.cpp
+        layer/MyLayer.h
+        networkDefine/layerParamDefine.h
+        networkDefine/netParamDefine.h
+        src/JsonReaderFile.cpp
+        src/JsonReaderFile.h
+        CMakeLists.txt
+        main.cpp
+        README.md)
+
+target_link_libraries(FirstAIFramework ${JSONCPP_LIBRARIES})
+target_link_libraries(FirstAIFramework -larmadillo)
+target_link_libraries(FirstAIFramework
+        ${Boost_FILESYSTEM_LIBRARY}
+        ${Boost_SYSTEM_LIBRARY}
+        ${PROTOBUF_LIBRARY}
+        )
+

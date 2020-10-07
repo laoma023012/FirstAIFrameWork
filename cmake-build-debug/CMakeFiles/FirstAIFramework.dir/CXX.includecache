@@ -1,24 +1,10 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
 #IncludeRegexComplain: ^$
 
 #IncludeRegexTransform: 
-
-/home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.cpp
-
-/home/mxc/CLionProjects/FirstAIFramework/main.cpp
-iostream
--
-armadillo
--
-json/json.h
-/home/mxc/CLionProjects/FirstAIFramework/json/json.h
-string
--
-fstream
--
 
 /home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h
 iostream

@@ -12,8 +12,9 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/armadillo_bits"
-  "/usr/local/include"
+  "../layer"
+  "../networkDefine"
+  "../src"
   )
 
 # Targets to which this target links.

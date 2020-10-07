@@ -5,7 +5,12 @@
 #ifndef FIRSTAIFRAMEWORK_LAYERPARAMDEFINE_H
 #define FIRSTAIFRAMEWORK_LAYERPARAMDEFINE_H
 
-struct LayerParamDefine{
+class LayerParamDefine{
+public:
+    LayerParamDefine(){
+        this->conv_size = 0;
+        this->stride = 0;
+    }
     int conv_size;
     int stride;
 };

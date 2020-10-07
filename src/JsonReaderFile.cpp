@@ -7,7 +7,7 @@
 #include <json/json.h>
 #include <iostream>
 #include "assert.h"
-void jsonReaderFile::readParam(std::string json_txt) {
+void JsonReaderFile::readParam(std::string json_txt) {
     std::ifstream ifs;
     ifs.open(json_txt);
     assert(ifs.is_open());
@@ -18,6 +18,7 @@ void jsonReaderFile::readParam(std::string json_txt) {
     } else {
         if (!value["train"].isNull()){
             auto &paramNet = value["train"];
+            this->netParamDefine.learningRate = paramNet["learning rate"].asDouble();
             this->netParamDefine.momentumParameter = paramNet["lr decay"].asDouble();
             this->netParamDefine.batchSize = paramNet["batch size"].asInt();
             this->netParamDefine.useBatch = paramNet["use batch"].asBool();
