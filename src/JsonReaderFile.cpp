@@ -19,7 +19,7 @@ void JsonReaderFile::readParam(std::string json_txt) {
         if (!value["train"].isNull()){
             auto &paramNet = value["train"];
             this->netParamDefine.learningRate = paramNet["learning rate"].asDouble();
-            this->netParamDefine.momentumParameter = paramNet["lr decay"].asDouble();
+            this->netParamDefine.momentumParameter = paramNet["momentum parameter"].asDouble();
             this->netParamDefine.batchSize = paramNet["batch size"].asInt();
             this->netParamDefine.useBatch = paramNet["use batch"].asBool();
             this->netParamDefine.evaluateInterval = paramNet["evaluate interval"].asInt();
@@ -29,7 +29,8 @@ void JsonReaderFile::readParam(std::string json_txt) {
             this->netParamDefine.numEpochs = paramNet["num epochs"].asInt();
             this->netParamDefine.preTrainModel = paramNet["pre train model"].asString();
             this->netParamDefine.snapshot = paramNet["snapshot"].asBool();
-            this->netParamDefine.updateMethod = paramNet["update Method"].asString();
+            this->netParamDefine.updateMethod = paramNet["update method"].asString();
+            this->netParamDefine.snapshotInterval = paramNet["snapshot interval"].asInt();
         }
     }
 }

@@ -9,9 +9,9 @@
     "batch size": 200,
     "evaluate interval": 1,
     "lr update": true,
-    "snapshot": false,
+    "snapshot": true,
     "snapshot interval": 10,
-    "fine tune": false,
+    "fine tune": true,
     "pre train model": "./iter20.gordonmodel"
   } ,
   "net":[

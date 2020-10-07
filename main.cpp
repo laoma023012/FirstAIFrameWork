@@ -27,29 +27,27 @@ void testJSON(){
         std::cout << root["uploadid"].asString();//print "UP000000"
     }
 }
-
-int main() {
+void testParameter(){
     const char* json_txt = "../networkDefine/layerDefine.json";
     LayerParamDefine layerParamDefine;
     NetParamDefine netParamDefine;
     JsonReaderFile jsonReaderFile(json_txt, layerParamDefine, netParamDefine);
     cout << netParamDefine.learningRate << endl;
-    /*
-    Json::Value root;
-    Json::Reader reader;
-    ifstream ifs;
-    ifs.open(json_txt);
+    cout << netParamDefine.lrDecay << endl;
+    cout << netParamDefine.momentumParameter << endl;
+    cout << netParamDefine.numEpochs << endl;
+    cout << netParamDefine.useBatch << endl;
+    cout << netParamDefine.batchSize << endl;
+    cout << netParamDefine.evaluateInterval << endl;
+    cout << netParamDefine.lrUpdate << endl;
+    cout << netParamDefine.snapshot << endl;
+    cout << netParamDefine.snapshotInterval << endl;
+    cout << netParamDefine.preTrainModel << endl;
+    cout << netParamDefine.fineTune << endl;
+    cout << netParamDefine.updateMethod << endl;
+}
 
-    if(!reader.parse(ifs, root)){
-        std:cout << "error Read" << std::endl;
-        return 0;
-        // "parse fail";
-    } else {
-        auto &trainParametr = root["train"];
-        double learning_rate = trainParametr["learning rate"].asDouble();
-        std::cout << "learning rate is " << learning_rate << std::endl;
-        ifs.close();
-    }
-     */
+int main() {
+    testParameter();
     return 0;
 }
