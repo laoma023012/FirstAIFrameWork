@@ -12,18 +12,20 @@
 #define FIRSTAIFRAMEWORK_JSONREADERFILE_H
 class JsonReaderFile {
 public:
-    JsonReaderFile(std::string jsonName, LayerParamDefine &layerParamDefine, NetParamDefine &netParamDefine)
-            : layerParamDefine(layerParamDefine), netParamDefine(netParamDefine) {
+    JsonReaderFile(std::string jsonName,
+                   //LayerParamDefine &layerParamDefine,
+                   NetParamDefine &netParamDefine):  netParamDefine(netParamDefine){
+
         readParam(jsonName);
     };
-private:
-    LayerParamDefine& layerParamDefine;
-    NetParamDefine& netParamDefine;
     std::unordered_map<std::string, LayerParamDefine> lparams;
     std::vector<std::string> layerName;
     std::vector<std::string> layerType;
+private:
+    //LayerParamDefine& layerParamDefine;
+    NetParamDefine& netParamDefine;
     void readParam(std::string jsonPath);
-    constexpr unsigned int str2int( const char* str, int h = 0);
+    //constexpr unsigned int str2int( const char* str, int h = 0) ;
 };
 
 #endif //FIRSTAIFRAMEWORK_JSONREADERFILE_H

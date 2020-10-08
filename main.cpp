@@ -31,7 +31,7 @@ void testParameter(){
     const char* json_txt = "../networkDefine/layerDefine.json";
     LayerParamDefine layerParamDefine;
     NetParamDefine netParamDefine;
-    JsonReaderFile jsonReaderFile(json_txt, layerParamDefine, netParamDefine);
+    JsonReaderFile jsonReaderFile(json_txt, netParamDefine);
     cout << netParamDefine.learningRate << endl;
     cout << netParamDefine.lrDecay << endl;
     cout << netParamDefine.momentumParameter << endl;
@@ -45,6 +45,33 @@ void testParameter(){
     cout << netParamDefine.preTrainModel << endl;
     cout << netParamDefine.fineTune << endl;
     cout << netParamDefine.updateMethod << endl;
+    cout << "--------------------------" << endl;
+
+    cout << "print current layer name" << endl;
+    for(auto& currentName : jsonReaderFile.layerName ){
+        //cout << currentName << endl;
+    }
+
+    cout << "print current layer type" << endl;
+    for(auto& currentType : jsonReaderFile.layerType){
+        //cout << currentType << endl;
+    }
+
+    for(auto& currentLayerParam : jsonReaderFile.lparams){
+        cout << "current Layer Name is " << currentLayerParam.first << endl;
+        auto& currentLayerParamSecond = currentLayerParam.second;
+        cout << currentLayerParamSecond.conv_kernels << endl;
+        cout << currentLayerParamSecond.conv_width << endl;
+        cout << currentLayerParamSecond.conv_height << endl;
+        cout << currentLayerParamSecond.conv_pad << endl;
+        cout << currentLayerParamSecond.conv_stride << endl;
+
+        cout << currentLayerParamSecond.pool_width << endl;
+        cout << currentLayerParamSecond.pool_height << endl;
+        cout << currentLayerParamSecond.pool_stride << endl;
+
+        cout << currentLayerParamSecond.fc_kernels << endl;
+    }
 }
 
 int main(int arg, char** argv) {

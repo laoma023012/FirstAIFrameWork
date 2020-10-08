@@ -7,9 +7,11 @@
 #include <json/json.h>
 #include <iostream>
 #include "assert.h"
-constexpr unsigned int JsonReaderFile::str2int(const char* str, int h ) {
+/*
+constexpr unsigned int  JsonReaderFile::str2int(const char* str, int h )  {
     return !str[h] ? 5381 : (str2int(str, h+1) * 33) ^ str[h];
 }
+*/
 
 void JsonReaderFile::readParam(std::string json_txt) {
     std::ifstream ifs;
@@ -42,16 +44,36 @@ void JsonReaderFile::readParam(std::string json_txt) {
                 this->layerName.push_back(thisLayer["name"].asString());
                 this->layerType.push_back(thisLayer["type"].asString());
                 if(thisLayer["type"].asString() == "Conv"){
+                    /*
                     this->layerParamDefine.conv_kernels = thisLayer["kernel num"].asInt();
                     this->layerParamDefine.conv_width = thisLayer["kernel width"].asInt();
                     this->layerParamDefine.conv_height = thisLayer["kernel height"].asInt();
                     this->layerParamDefine.conv_pad = thisLayer["pad"].asInt();
                     this->layerParamDefine.conv_stride = thisLayer["stride"].asInt();
+                    */
+                    this->lparams[thisLayer["name"].asString()].conv_stride = thisLayer["stride"].asInt();
+                    this->lparams[thisLayer["name"].asString()].conv_pad = thisLayer["pad"].asInt();
+                    this->lparams[thisLayer["name"].asString()].conv_height = thisLayer["kernel height"].asInt();
+                    this->lparams[thisLayer["name"].asString()].conv_width = thisLayer["kernel width"].asInt();
+                    this->lparams[thisLayer["name"].asString()].conv_kernels = thisLayer["kernel num"].asInt();
+
                 }
                 if(thisLayer["type"].asString() == "Pool"){
-                    
+                    /*
+                    this->layerParamDefine.pool_width = thisLayer["kernel width"].asInt();
+                    this->layerParamDefine.pool_height = thisLayer["kernel height"].asInt();
+                    this->layerParamDefine.pool_stride = thisLayer["stride"].asInt();
+                    */
+                    this->lparams[thisLayer["name"].asString()].pool_stride = thisLayer["stride"].asInt();
+                    this->lparams[thisLayer["name"].asString()].pool_height = thisLayer["kernel height"].asInt();
+                    this->lparams[thisLayer["name"].asString()].pool_width = thisLayer["kernel width"].asInt();
                 }
-                if(thisLayer["type"].asString() == "Fc"){}
+                if(thisLayer["type"].asString() == "Fc"){
+                    /*
+                    this->layerParamDefine.fc_kernels = thisLayer["kernel num"].asInt();
+                    */
+                    this->lparams[thisLayer["name"].asString()].fc_kernels = thisLayer["kernel num"].asInt();
+                }
             }
         }
     }
