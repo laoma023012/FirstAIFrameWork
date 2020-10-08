@@ -92,6 +92,10 @@ void testBlob(){
     blob5.print();
 }
 
+void testImage(){
+    Blob* images(new Blob(10, 1, 32, 32));
+}
+
 int main(int arg, char** argv) {
     //testParameter();
     //testBlob();
