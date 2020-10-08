@@ -2,6 +2,7 @@
 #include <armadillo>
 #include "json/json.h"
 #include <string>
+#include "layer/LayerBlob.h"
 #include <fstream>
 #include "src/JsonReaderFile.h"
 #include "networkDefine/netParamDefine.h"
@@ -74,7 +75,25 @@ void testParameter(){
     }
 }
 
+void testBlob(){
+    Blob blob(2,3,5,3, TONES);
+    //blob.print();
+
+    Blob blob2(2,3,5,3, TZEROS);
+    //blob2.print();
+
+    Blob blob3(2,3,5,3, TRANDN);
+    //blob3.print();
+
+    Blob blob4(2,3,5,3, TRANDU);
+    //blob4.print();
+
+    Blob blob5(2,3,5,3);
+    blob5.print();
+}
+
 int main(int arg, char** argv) {
-    testParameter();
+    //testParameter();
+    //testBlob();
     return 0;
 }

@@ -25,6 +25,7 @@ class Blob{
 public:
     Blob():N_(0), C_(0), H_(0), W_(0){};
     Blob(const int n, const int c, const int h, const int w, int type = TDEFAULT);
+    void print();
 private:
     void _init(const int n, const int c, const int h, const int w, int type);
     int N_; int C_; int H_; int W_;

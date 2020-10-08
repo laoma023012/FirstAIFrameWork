@@ -32,5 +32,16 @@ void Blob::_init(const int n, const int c, const int h, const int w, int type) {
 }
 
 Blob::Blob(const int n, const int c, const int h, const int w, int type) {
+    this-> N_ = n;
+    this-> C_ = c;
+    this-> H_ = h;
+    this -> W_ = w;
     _init(n ,c, h, w, type);
+}
+
+void Blob::print() {
+    for(int i = 0; i < N_; i++){
+        std::cout << "N = " << std::endl;
+        this->blobData[i].print();
+    }
 }
