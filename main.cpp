@@ -2,6 +2,7 @@
 #include <armadillo>
 #include "json/json.h"
 #include <string>
+#include <memory>
 #include "layer/LayerBlob.h"
 #include <fstream>
 #include "src/JsonReaderFile.h"
@@ -95,15 +96,17 @@ void testBlob(){
 }
 
 void testImage(){
-    Blob* images(new Blob(60000, 1, 28, 28, TZEROS));
-    Blob* labels(new Blob(60000, 10, 1, 1, TZEROS));
+    //Blob* images(new Blob(60000, 1, 28, 28, TZEROS));
+    //Blob* labels(new Blob(60000, 10, 1, 1, TZEROS));
+
+    std::shared_ptr<Blob> images(new Blob(60000, 1, 28, 28, TZEROS));
+    std::shared_ptr<Blob> labels(new Blob(60000, 10, 1, 1, TZEROS));
     ReadData readData;
     readData.readMinistData("/home/mxc/CLionProjects/FirstAIFramework/img_file/train-images.idx3-ubyte", images);
     readData.readMinistLabel("/home/mxc/CLionProjects/FirstAIFramework/img_file/train-labels.idx1-ubyte", labels);
 
     std::vector<arma::cube>& list0 = images->getBlobData();
     std::vector<arma::cube>& list1 = labels->getBlobData();
-
     for(int  i = 0 ; i < 3 ; i++ ){
         list0[i].print();
         list1[i].print();
