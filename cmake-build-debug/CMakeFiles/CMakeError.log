@@ -1,55 +1,65 @@
-Determining if the pthread_create exist failed with the following output:
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1c9e7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1c9e7.dir/build.make CMakeFiles/cmTC_1c9e7.dir/build
+Run Build Command(s):/usr/bin/make cmTC_586e3/fast && /usr/bin/make  -f CMakeFiles/cmTC_586e3.dir/build.make CMakeFiles/cmTC_586e3.dir/build
 make[1]: Entering directory '/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1c9e7.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_1c9e7.dir/CheckSymbolExists.c.o   -c /home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_1c9e7
-/home/mxc/下载/clion-2017.1.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c9e7.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_1c9e7.dir/CheckSymbolExists.c.o  -o cmTC_1c9e7 
-CMakeFiles/cmTC_1c9e7.dir/CheckSymbolExists.c.o：在函数‘main’中：
-CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+Building C object CMakeFiles/cmTC_586e3.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_586e3.dir/src.c.o   -c /home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_586e3
+/home/mxc/下载/clion-2020.2.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_586e3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_586e3.dir/src.c.o  -o cmTC_586e3 
+CMakeFiles/cmTC_586e3.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x3c)：对‘pthread_create’未定义的引用
+src.c:(.text+0x48)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x54)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x65)：对‘pthread_join’未定义的引用
+src.c:(.text+0x79)：对‘pthread_atfork’未定义的引用
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1c9e7.dir/build.make:97: recipe for target 'cmTC_1c9e7' failed
-make[1]: *** [cmTC_1c9e7] Error 1
+CMakeFiles/cmTC_586e3.dir/build.make:106: recipe for target 'cmTC_586e3' failed
+make[1]: *** [cmTC_586e3] Error 1
 make[1]: Leaving directory '/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_1c9e7/fast' failed
-make: *** [cmTC_1c9e7/fast] Error 2
+Makefile:141: recipe for target 'cmTC_586e3/fast' failed
+make: *** [cmTC_586e3/fast] Error 2
 
-File /home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
+
+Source file was:
 #include <pthread.h>
 
-int main(int argc, char** argv)
+void* test_func(void* data)
 {
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
   return 0;
-#endif
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7d7c6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7d7c6.dir/build.make CMakeFiles/cmTC_7d7c6.dir/build
+Run Build Command(s):/usr/bin/make cmTC_68883/fast && /usr/bin/make  -f CMakeFiles/cmTC_68883.dir/build.make CMakeFiles/cmTC_68883.dir/build
 make[1]: Entering directory '/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d7c6.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7d7c6.dir/CheckFunctionExists.c.o   -c /home/mxc/下载/clion-2017.1.1/bin/cmake/share/cmake-3.7/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7d7c6
-/home/mxc/下载/clion-2017.1.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d7c6.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_7d7c6.dir/CheckFunctionExists.c.o  -o cmTC_7d7c6 -lpthreads 
+Building C object CMakeFiles/cmTC_68883.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_68883.dir/CheckFunctionExists.c.o   -c /home/mxc/下载/clion-2020.2.3/bin/cmake/linux/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_68883
+/home/mxc/下载/clion-2020.2.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68883.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_68883.dir/CheckFunctionExists.c.o  -o cmTC_68883  -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_7d7c6.dir/build.make:97: recipe for target 'cmTC_7d7c6' failed
-make[1]: *** [cmTC_7d7c6] Error 1
+CMakeFiles/cmTC_68883.dir/build.make:106: recipe for target 'cmTC_68883' failed
+make[1]: *** [cmTC_68883] Error 1
 make[1]: Leaving directory '/home/mxc/CLionProjects/FirstAIFramework/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_7d7c6/fast' failed
-make: *** [cmTC_7d7c6/fast] Error 2
+Makefile:141: recipe for target 'cmTC_68883/fast' failed
+make: *** [cmTC_68883/fast] Error 2
+
 
 
