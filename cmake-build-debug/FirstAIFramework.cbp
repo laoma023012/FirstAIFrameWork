@@ -112,6 +112,12 @@
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/layer/MyLayer.h">
 			<Option target="FirstAIFramework"/>
 		</Unit>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/layer/readData.cpp">
+			<Option target="FirstAIFramework"/>
+		</Unit>
+		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/layer/readData.h">
+			<Option target="FirstAIFramework"/>
+		</Unit>
 		<Unit filename="/home/mxc/CLionProjects/FirstAIFramework/main.cpp">
 			<Option target="FirstAIFramework"/>
 		</Unit>

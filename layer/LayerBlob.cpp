@@ -45,3 +45,11 @@ void Blob::print() {
         this->blobData[i].print();
     }
 }
+
+arma::cube & Blob::operator[](int i) {
+    return this->blobData[i];
+}
+
+std::vector<arma::cube> & Blob::getBlobData() {
+    return this -> blobData;
+}

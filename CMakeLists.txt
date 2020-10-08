@@ -27,7 +27,7 @@ add_executable(FirstAIFramework
         src/JsonReaderFile.h
         CMakeLists.txt
         main.cpp
-        README.md layer/LayerBlob.h layer/LayerBlob.cpp)
+        README.md layer/LayerBlob.h layer/LayerBlob.cpp layer/readData.h layer/readData.cpp)
 
 target_link_libraries(FirstAIFramework ${JSONCPP_LIBRARIES})
 target_link_libraries(FirstAIFramework -larmadillo)

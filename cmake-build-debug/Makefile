@@ -197,6 +197,33 @@ layer/MyLayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/layer/MyLayer.cpp.s
 .PHONY : layer/MyLayer.cpp.s
 
+layer/readData.o: layer/readData.cpp.o
+
+.PHONY : layer/readData.o
+
+# target to build an object file
+layer/readData.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/layer/readData.cpp.o
+.PHONY : layer/readData.cpp.o
+
+layer/readData.i: layer/readData.cpp.i
+
+.PHONY : layer/readData.i
+
+# target to preprocess a source file
+layer/readData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/layer/readData.cpp.i
+.PHONY : layer/readData.cpp.i
+
+layer/readData.s: layer/readData.cpp.s
+
+.PHONY : layer/readData.s
+
+# target to generate assembly for a file
+layer/readData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstAIFramework.dir/build.make CMakeFiles/FirstAIFramework.dir/layer/readData.cpp.s
+.PHONY : layer/readData.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -266,6 +293,9 @@ help:
 	@echo "... layer/MyLayer.o"
 	@echo "... layer/MyLayer.i"
 	@echo "... layer/MyLayer.s"
+	@echo "... layer/readData.o"
+	@echo "... layer/readData.i"
+	@echo "... layer/readData.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

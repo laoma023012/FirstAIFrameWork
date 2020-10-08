@@ -7,7 +7,9 @@
 #include "src/JsonReaderFile.h"
 #include "networkDefine/netParamDefine.h"
 #include "networkDefine/layerParamDefine.h"
+#include "layer/readData.h"
 using namespace std;
+
 //using namespace Json;
 using namespace arma;
 void testJSON(){
@@ -93,10 +95,23 @@ void testBlob(){
 }
 
 void testImage(){
-    Blob* images(new Blob(10, 1, 32, 32));
+    Blob* images(new Blob(60000, 1, 28, 28, TZEROS));
+    Blob* labels(new Blob(60000, 10, 1, 1, TZEROS));
+    ReadData readData;
+    readData.readMinistData("/home/mxc/CLionProjects/FirstAIFramework/img_file/train-images.idx3-ubyte", images);
+    readData.readMinistLabel("/home/mxc/CLionProjects/FirstAIFramework/img_file/train-labels.idx1-ubyte", labels);
+
+    std::vector<arma::cube>& list0 = images->getBlobData();
+    std::vector<arma::cube>& list1 = labels->getBlobData();
+
+    for(int  i = 0 ; i < 3 ; i++ ){
+        list0[i].print();
+        list1[i].print();
+    }
 }
 
 int main(int arg, char** argv) {
+    testImage();
     //testParameter();
     //testBlob();
     return 0;

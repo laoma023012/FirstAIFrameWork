@@ -12,6 +12,12 @@ iostream
 armadillo
 -
 
+/home/mxc/CLionProjects/FirstAIFramework/layer/readData.h
+iostream
+-
+LayerBlob.h
+/home/mxc/CLionProjects/FirstAIFramework/layer/LayerBlob.h
+
 /home/mxc/CLionProjects/FirstAIFramework/main.cpp
 iostream
 -
@@ -31,6 +37,8 @@ networkDefine/netParamDefine.h
 /home/mxc/CLionProjects/FirstAIFramework/networkDefine/netParamDefine.h
 networkDefine/layerParamDefine.h
 /home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h
+layer/readData.h
+/home/mxc/CLionProjects/FirstAIFramework/layer/readData.h
 
 /home/mxc/CLionProjects/FirstAIFramework/networkDefine/layerParamDefine.h
 iostream
